@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.news"
+    namespace "za.co.assupol.claims"
     defaultConfig {
-        applicationId "com.news"
+        applicationId "za.co.assupol.claims"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

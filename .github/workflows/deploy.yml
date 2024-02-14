@@ -3,8 +3,8 @@ name: Build and Deploy
 on:
   push:
     tags:
-      - 'news-android@*.*.*'
-      - 'news-ios@*.*.*'
+      - 'assupolclaims-android@*.*.*'
+      - 'assupolclaims-ios@*.*.*'
 
 jobs:
   build-and-deploy:
@@ -32,11 +32,11 @@ jobs:
         run: echo "$CODE_SIGNING_KEY" > code-signing.pem
 
       - name: Run Android bundle script
-        if: contains(github.ref, 'news-android@')
+        if: contains(github.ref, 'assupolclaims-android@')
         run: yarn bundle:android
 
       - name: Run iOS bundle script
-        if: contains(github.ref, 'news-ios@')
+        if: contains(github.ref, 'assupolclaims-ios@')
         run: yarn bundle:ios
 
       - name: Delete code-signing.pem

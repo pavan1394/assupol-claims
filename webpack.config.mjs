@@ -233,7 +233,7 @@ export default env => {
         },
       }),
       new Repack.plugins.ModuleFederationPlugin({
-        name: 'news',
+        name: 'assupolclaims',
         exposes: {
           './App': './src/navigation/MainNavigator',
         },
